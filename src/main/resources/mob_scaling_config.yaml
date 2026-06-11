@@ -1,0 +1,19 @@
+# Fichier de configuration pour le système de niveau des monstres (AOW Mod)
+# Ces valeurs contrôlent l'équilibre du jeu et peuvent être modifiées sans recompilation.
+
+# --- Multiplicateurs de scaling par niveau ---
+# Les valeurs représentent le bonus TOTAL appliqué au mob, en fonction de son niveau MINUS 1.
+# Exemple: Level = N => Bonus = (N - 1) * MULTIPLIER
+# Un multiplicateur élevé rend les mobs beaucoup plus puissants rapidement.
+
+scaling:
+ health_multiplier: 10 # Corresponds à HEALTH_PER_LEVEL dans l'ancien code.
+ damage_multiplier: 0.08 # Corresponds à DAMAGE_PER_LEVEL.
+ armor_multiplier: 0.15 # Nouveau multiplicateur pour l'armure, plus prononcé que les dégâts.
+
+# --- Limites de niveau et calculs spécifiques ---
+ limits:
+ safe_zone_radius: 5000.0 # Rayon autour du spawn (en blocs).
+ max_armor: 30.0         # Plafond physique de l'armure utile dans le jeu.
+
+# Cette structure permet d'ajouter des facteurs pour différents types de mobs ou biomes ultérieurement.
